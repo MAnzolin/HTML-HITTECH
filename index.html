@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"> 
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="tecnologia, automação, serviço, engenharia, elétrica,robótica"/>
+    <meta name="description" content="Soluções em automação a partir da integração de hardware e software."/>
+    <link rel='stylesheet' type="text/css" media="screen and (max-width: 960px)" href="estilohomep.css"/>
+    <link rel='stylesheet' type="text/css" media="screen and (min-width: 961px)" href='estilohomeg.css'/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="imagens/favicon (1).ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Hit Tech</title>
+    <style>
+        .foto:nth-child(2){
+            animation-delay: 5s;
+        }
+        .foto:nth-child(3){
+            animation-delay: 10s;
+        }
+    </style>
+</head>
+<body onload="slide4()">
+    <header>
+        <section class="menu"> 
+            <input type="checkbox" id="check">
+            <label for="check"><img src="imagens/hamburguer.png" id="opt"></label>
+            <div class="barra">
+            <nav id="navbarra">   
+                <img src="imagens/logo peq.png" id="topo">
+                <a href="#emp" onclick="some()"><div class="link">Empresa</div></a>
+                <a href="#solu" onclick="some()"><div class="link">Soluções</div></a>
+                <a href="#cont" onclick="some()"><div class="link">Contato</div></a>
+                <a href="http://api.whatsapp.com/send?phone=5511992547746&text=Olá!%20Obrigado%20por%20entrar%20em%20contato." onclick="some()"><div class="link">Whatsapp</div></a>
+            </nav>
+            </div>
+        </section>
+    </header>
+    <main>
+    <div id="cor">
+    <section class="carrossel">
+        <img src="imagens/slide1.png" id="slide">
+    </section>
+    </div>
+    </section>
+    <section class="empresa">
+        <h1 id="emp">Quem somos nós?</h1>
+        <article class="empresa" id="txtemp">
+            <p>A Hit Tech é uma empresa voltada para soluções em automação.</p>
+            <p>Nosso principal objetivo é levar a tecnologia até você</p>
+            <p>Acreditamos que pequenas mudanças </p><p>podem transformar o seu modo de aproveitar o mundo.</p>
+            <p>Venha viver a tecnologia, viva a HIT TECH!</p>
+            <br>
+        </article>
+    </section>
+    <section class="amostra">
+            <h1 id="amost">HIT TECH pelo celular</h1>
+            <p>Quer acender a luz do quarto, abrir o portão da garagem</br>ou desligar algum aparelho pelo celular?</p>
+            <p>A HIT TECH te mostra a solução! Não perca tempo!</br>Clique na foto e descubra como automatizar a sua casa</p>
+            <img src="imagens/Iphone 3.png" id="iphone" data-toggle="modal" data-target="#exampleModalCenter">
+            <img src="imagens/play.png" id="play" data-toggle="modal" data-target="#exampleModalCenter" >
+            <div class="modal fade" id="exampleModalCenter" >
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                          <video width="100%" controls>
+                            <source src="imagens/video.mp4" type="video/mp4">
+                          </video>
+                        </div>
+                    </div>
+                    </div>
+                  </div>
+    
+    </section>
+    <section class="solucoes">
+        <h1 id="solu">Portifólio de soluções</h1>
+        <article>
+            <p class="solucoes">Automação Residencial <img src="imagens/check.png" class="tabela"></p>
+            <p class="solucoes">Automação de Processos <img src="imagens/check.png" class="tabela"></p>
+            <p class="solucoes">Criação de sites personalizados <img src="imagens/check.png" class="tabela"></p>
+            <p class="solucoes">Análise de Riscos <img src="imagens/check.png" class="tabela"></p>
+            <p class="solucoes">Segurança Física e Digital <img src="imagens/check.png" class="tabela"></p>
+            <p class="solucoes">Sistemas Monitoramento e CFTV <img src="imagens/check.png" class="tabela"></p>
+        </article>
+    </section>
+    <section class="fale">
+        <h1 id="cont">Vamos conversar?</h1>
+        <form class="fale" method="post" action="script.php" name="formulario">
+            <input class="fale" type="text" name="nome" placeholder="NOME" pattern="[^0-9]+"/>
+            <input class="fale" type="email" name="email" placeholder="E-MAIL"/>
+            <input class="fale" type="tel" name="tel" placeholder="TELEFONE" maxlength="9" minlength="8" pattern="[^A-Za-z]+"/>
+            <textarea class="fale" type="mensagem" name="mensagem" placeholder="MENSAGEM ..."></textarea>
+            <div class="button">
+                <button type="submit" name="submit" onclick="return validar()" id="botao"class="not-active">Enviar</button></br></br>
+                <input type="checkbox" name="terms" id="terms" onclick="ativo()">
+                <a href="#" data-toggle="modal" data-target="#myModal">Aceitar termos</a>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                              <div class="modal fade" id="myModal">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header"><h1>Termos</h1></div>
+                                        <div class="modal-body"><h2>Política de privacidade</h2><p>Todas as suas informações pessoais recolhidas, serão usadas para o ajudar a tornar a sua visita no nosso site o mais produtiva e agradável possível.</p><p>A garantia da confidencialidade dos dados pessoais dos utilizadores do nosso site é importante para o Hit Tech.</p><p>Todas as informações pessoais relativas a membros, assinantes, clientes ou visitantes que usem o Hit Tech serão tratadas em concordância com a Lei da Proteção de Dados Pessoais de 26 de outubro de 1998 (Lei n.º 67/98).</p><p>A informação pessoal recolhida pode incluir o seu nome, e-mail, número de telefone e/ou telemóvel, morada, data de nascimento e/ou outros.</p><p>O uso do Hit Tech pressupõe a aceitação deste <a href='http://www.politicaprivacidade.com' title='acordo de privacidade'>Acordo de privacidade</a>. A equipa do Hit Tech reserva-se ao direito de alterar este acordo sem aviso prévio. Deste modo, recomendamos que consulte a nossa política de privacidade com regularidade de forma a estar sempre atualizado.</p><h2>Os anúncios</h2><p>Tal como outros websites, coletamos e utilizamos informação contida nos anúncios. A informação contida nos anúncios, inclui o seu endereço IP (Internet Protocol), o seu ISP (Internet Service Provider, como o Sapo, Clix, ou outro), o browser que utilizou ao visitar o nosso website (como o Internet Explorer ou o Firefox), o tempo da sua visita e que páginas visitou dentro do nosso website.</p><h2>Ligações a Sites de terceiros</h2><p>O Hit Tech possui ligações para outros sites, os quais, a nosso ver, podem conter informações / ferramentas úteis para os nossos visitantes. A nossa política de privacidade não é aplicada a sites de terceiros, pelo que, caso visite outro site a partir do nosso deverá ler a politica de privacidade do mesmo.</p><p>Não nos responsabilizamos pela política de privacidade ou conteúdo presente nesses mesmos sites.</p></div>
+                                        <div class="modal-footer"><input class="btn btn-default" data-dismiss="modal" value="Fechar"></div>
+                                    </div>
+                                </div>
+                              </div>  
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </form>
+    </section> 
+    <section class="contato">
+        <h1>Contato</h1>
+        <h2>Osasco, São Paulo</h2>
+        <p class="texto-fundo">Rua do Aladin, 70 - Jasmine,<br> SP CEP: XXXXX-XXX<br>patrick.lopes@hittech.net<br>Tel. +55 11 9XXXX-XXXX</p>
+        <img src="imagens/logo peq.png" id="logo-footer">
+        <img src="imagens/POLVO-minimalist.png" id="polvoimg">
+    </section>
+    </main>
+    <a class="btopo" href="#topo">TOPO</a>
+    <footer class="fim">
+        <p>	&#169;Hit Tech - Soluções em automação</p>
+        <p>Todos os direitos desta página estão reservados.</p>
+    </footer>
+    <script src="scripthome.js"></script>
+    <script src="http://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

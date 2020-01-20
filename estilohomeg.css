@@ -1,0 +1,291 @@
+body{
+    margin:0px;
+    padding: 0px;
+    background:rgb(255, 255, 255);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/*menu ------------------------------------------------------------------------------------------------------------------*/
+#check{
+    display: none;
+}
+#opt{
+    display: none;
+}
+.barra{
+    background: rgb(31, 29, 29);
+    margin: 0%;
+    float: right;
+    width: 100%;
+    height: 15%;
+}
+
+#navbarra a{
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 180%;
+    padding: 1.5%;
+    display: inline-block;
+}
+
+#navbarra img{
+    width: 15%;
+    padding: 0% 0.8%;
+}
+
+#navbarra a:hover{
+    background: rgb(77, 76, 76);
+}
+
+/* Fotos -------------------------------------------------------------------------------------------------------------------*/
+.carrossel{
+    max-width: 1200px;            /*Limitando o tamanho da img para não distorcer*/
+    margin: 0 auto;
+}
+
+.carrossel img{
+    width: 100%;
+}
+
+
+/*Quem somos nós? --------------------------------------------------------------------------------------------------------*/
+.empresa{
+    padding: 0px;
+    clear: both;
+    background: rgb(228, 225, 225);
+    margin: 0px;
+    color:rgb(22, 22, 22);
+    padding: 1% 0%;
+}
+.empresa h1{
+    font-size: 200%;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 2%;
+}
+
+.empresa p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 135%;
+    text-align: center;
+}
+
+/*Iphone --------------------------------------------------------------------------------------------------------*/
+.amostra{
+    padding: 1% 0% 1% 0%;
+    clear: both;
+    background:rgb(22, 22, 22);
+    margin: 0px;
+    color:white;
+}
+.amostra h1{
+    font-size: 200%;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 2%;
+}
+.amostra p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 125%;
+    text-align: center;
+}
+
+#iphone{
+    width: 30%;
+    margin: 1% 35% 2% 35%;
+    padding: 0%;
+    border: white 2px solid;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+#play{
+    width: 8%;
+    margin: -21%;
+    margin-left: 46%;
+    transition: 0.5s;
+    opacity: 0;
+    cursor: pointer;
+}
+
+#play:hover{
+    opacity: 1;
+}
+.modal-content{
+    background: transparent !important;
+    border: none !important;
+}
+ 
+/*Solucoes -------------------------------------------------------------------------------------------------------------*/
+.solucoes{
+    background:rgb(43, 42, 42);
+    color: aliceblue;
+    clear: both;
+    margin: 0%;
+    padding: 1% 0% 1% 0%;
+}
+
+.solucoes h1{
+    font-size: 200%;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-bottom: 3%;
+}
+
+.solucoes p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 135%;
+    text-align: center;
+    color: aliceblue; 
+}
+
+.solucoes img{
+    width: 2.5%;
+    margin-left: 1%;  
+}
+
+/*Fale----------------------------------------------------------------------------------------------------------------*/
+section.fale{
+    color: rgb(46, 44, 44);
+    background: rgb(228, 225, 225);
+    overflow: auto;
+    clear: both;
+}
+
+section.fale h1{
+    font-size: 200%;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 2% 0% 2% 0%;
+}
+
+form.fale {
+    border: 2px solid rgb(46, 44, 44);
+    border-radius: 1%;
+    margin: auto auto 2% auto;
+    width: 40%;
+    padding: 3% 2%;
+    box-sizing: border-box;
+}
+
+.fale input, textarea {
+    font: sans-serif;
+    margin-bottom: 1%;
+    padding: 2%;
+    box-sizing: border-box;
+    border: 1px solid rgb(105, 105, 105);
+    width: 100%;
+    outline: none;
+    resize: none; 
+    -webkit-appearance: none;
+}
+
+textarea {
+    vertical-align: top;
+    height: 10%;
+    resize: vertical;
+}
+input:focus, textarea:focus {
+    border-color: #000;
+}
+
+#terms{
+    width: 4%;
+    margin-top: 1%;
+    outline: none;
+    resize: both; 
+    -webkit-appearance: checkbox;
+}
+
+.modal-dialog{
+    background-color: white;
+    border-radius: 5px;
+    border: 2px black solid;
+}
+
+.not-active{
+    pointer-events: none;
+    cursor: default;
+    background: rgba(46, 44, 44,0.5);
+    border: 2px rgba(46, 44, 44, 0.5) solid;
+}
+
+.active{
+    pointer-events: all;
+    cursor: pointer;
+    background: rgba(46, 44, 44,1);
+    border: 2px rgba(46, 44, 44, 1) solid;
+}
+
+.button {
+    margin: 2% 10% 0% 10%;
+    text-align: center;
+}
+button {
+    background: rgb(46, 44, 44);
+    border: 2px rgb(46, 44, 44) solid;
+    font-family: 'Montserrat', sans-serif;
+    color: aliceblue;
+    padding: 2%;
+    
+}
+/*Contato ------------------------------------------------------------------------------------------------------------------*/
+section.contato{
+    color: rgb(255, 255, 255);
+    background: rgb(31, 29, 29);
+    text-align: center;
+}
+
+section.contato h1{
+    font-size: 200%;
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 2% 0% 3% 0%;
+    clear: both;
+}
+section.contato h2{
+    margin-top: 2%;
+}
+
+#polvoimg{
+    width: 10%;
+    padding: 0%;
+    margin: -15% 0% 1% 50%;
+}
+
+#logo-footer{
+    width:20%;
+    margin: -13% 0% 0% 0%;
+}
+
+/*Topo ------------------------------------------------------------------------------------------------------------------*/
+
+.btopo{
+    position: fixed;
+    bottom: 2%;
+    right: 2%;
+    width: 7%;
+    text-align: center;
+    font-size: 75%;
+    border-radius: 50px;
+    border: 3px solid white;
+    padding: 0.5%;
+    box-shadow: 1px 2px 3px 0.5px black;
+    text-decoration: none;
+    color: white;
+    background: rgb(31, 29, 29);
+}
+
+
+/*Rodapé ------------------------------------------------------------------------------------------------------------------*/
+.fim{ 
+    background:rgb(22, 22, 22);
+    color: rgb(240, 240, 240);
+    padding: 2%;
+    text-align: center;
+    margin: 0;
+    
+}
