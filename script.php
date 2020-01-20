@@ -2,7 +2,7 @@
 
 # alterar a variavel abaixo colocando o seu email
 
-$destinatario = "mateus.mazzei14@gmail.com";
+$destinatario = "oseuemail@gmail.com";
 
 $nome = $_REQUEST['nome'];
 $email = $_REQUEST['email'];
